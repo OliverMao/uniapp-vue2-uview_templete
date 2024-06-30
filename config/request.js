@@ -45,7 +45,7 @@ module.exports = (vm) => {
 				return new Promise(() => { })
 			}
 		}
-		return data.data === undefined ? {} : data.data
+		return data === undefined ? {} : data
 	}, (response) => { 
 		// 对响应错误做点什么 （statusCode !== 200）
 		return Promise.reject(response)
